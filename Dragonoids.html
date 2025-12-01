@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="projects.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/SlideShow.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/BiggerImgOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Game</a>
+                <a href="#images">Images</a>
+                <a href="#info">About</a>
+                <a href="#code"><span>Code</span></a>
+            </nav>
+        </header>
+
+<!-- Projects Button -->
+        <button onclick="GoToProjectPage()" class="projects-button">Back to all projects</button>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1><span>Dragonoids</span></h1>
+                <h3>Game | Unity</h3>
+            </div>
+<!-- Trailer -->
+            <div class="home-img">
+                <iframe class="home-img" width="520" height="415" src="https://www.youtube.com/embed/-zzhGhBUVdk?autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+<!-- Images -->
+         <section class="images" id="images">
+            <h2 class="heading">Images</h2>
+
+            <div class="images-box">
+
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon1.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon2.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon3.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon4.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon5.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Dragonoids/Dragon6.webp">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon1.webp" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon2.webp" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon3.webp" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon4.webp" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon5.webp" style="width:100%" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Dragonoids/Dragon6.webp" style="width:100%" onclick="currentSlide(6)">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Info content -->
+        <section class="info hidden" id="info">
+            <h2 class="heading">About the game</h2>
+
+            <div class="info-box">
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">Game</span></h2>
+                    <p id="typingEffect">This is my take on Asteroids, another basic game I made in 2 weeks.
+                        I wanted to make it dragon themed, with a vulcanic vibe. I added my own twist by implementing abilities with 
+                        a cooldown, and baby dragons who will help you for a little while. Instead of a boss I wanted to give the 
+                        player a different challenge; they have to collect 3 shield pieces so they will not get crushed by the meteorshower.
+                    </p>
+                </div>
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">My efforts</span></h2>
+                    <p>I worked on:
+                        <li>The player</li>
+                        <li>GameManager</li>
+                        <li>Pickups</li>
+                        <li>Powerups</li>
+                        <li>Levels/ loop</li>
+                        <li>Meteors</li>
+                        <li>Meteorshower</li>
+                        <li>Tutorial</li>
+                        <li>PlayerPrefs</li>
+                        <li>3D art</li>
+                        <li>VFX</li>
+                        <li>Audio</li>
+                        <li>Menus</li>
+                        <li>UI</li>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Code content -->
+        <section class="code hidden" id="code">
+            <h2 class="heading">Code</h2>
+
+            <div class="code-box">
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Dragonoids/DragonoidsCode1.webp" alt="Ability cooldown" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Ability cooldown</span></h2>
+                    <p>To spice this simple project up I added abilities with cooldowns, so here is one of them.
+                        So I take a Sprite Image and set the fill method to Radial 360 so it fill clockwise.
+                        Upon pressing the assigned button I activate the right ability Image. The fillAmount will 
+                        go from full to empty via a timer - which is different for all of the abilities, once it 
+                        is 0, it can be activated again.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>High score</span></h2>
+                    <p>At the start of the game the player may enter their name, which I store in 
+                        PlayerPrefs and will be displayed on the endscreen. Here I also show the score
+                        and highscore.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Dragonoids/DragonoidsCode2.webp" alt="High score" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Dragonoids/DragonoidsCode3.webp" alt="Spawning of shield pickups" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Spawning of shield pickups</span></h2>
+                    <p>When the player reaches a score of 600 the 'boss fight' will be triggered, 
+                        which is a meteorshower. The player will have a limited time to pick up three
+                        shield pieces to gain immunity to this shower, or it will be game over.
+                    </p>
+                </div>
+
+            </div>
+
+            <h2 class="steps"> Check out my Git 
+                <a href="https://github.com/Inola8/Dragonoids/tree/main/Assets/_Project/Scripts" target="_blank">
+                    <span>here</span></i>
+                </a>
+                 for more
+            </h2>
+
+        </section>
+
+<!-- Expanded image -->
+        <div class="background-overlay" id="my-background-overlay">
+            <div class="close-overlay" onclick="CloseImage()">x</div>
+            <img class="bigger-img-content" id="img-ref">
+            <div id="bigger-img-text"></div>
+        </div>
+
+<!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>

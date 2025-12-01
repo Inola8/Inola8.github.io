@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="projects.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/SlideShow.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/BiggerImgOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Game</a>
+                <a href="#images">Images</a>
+                <a href="#info">About</a>
+                <a href="#code"><span>Code</span></a>
+            </nav>
+        </header>
+
+<!-- Projects Button -->
+        <button onclick="GoToProjectPage()" class="projects-button">Back to all projects</button>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1><span>CatCar</span></h1>
+                <h3>Game | Unity</h3>
+            </div>
+<!-- Trailer -->
+            <div class="home-img">
+                <iframe class="home-img" width="520" height="415" src="https://www.youtube.com/embed/WBrUBMQGNcM?autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+<!-- Images -->
+         <section class="images" id="images">
+            <h2 class="heading">Images</h2>
+
+            <div class="images-box">
+
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer1.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer2.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer3.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer4.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer5.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer6.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Platformer/Platformer7.webp">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer1.webp" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer2.webp" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer3.webp" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer4.webp" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer5.webp" style="width:100%" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer6.webp" style="width:100%" onclick="currentSlide(6)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Platformer/Platformer7.webp" style="width:100%" onclick="currentSlide(7)">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Info content -->
+        <section class="info hidden" id="info">
+            <h2 class="heading">About the game</h2>
+
+            <div class="info-box">
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">Game</span></h2>
+                    <p id="typingEffect">This is a simple platformer game. I wanted to give a 2D vibe to a 3D game and add kind of mini-games, 
+                        or a mashup of known games to dive into more hardware aspects. As this is not only playable on PC, but
+                        also on the Steamdeck, mobile devices, and in a web browser (try it out on 
+                        <a href="https://joy888.itch.io/catcar-platformer" class="otherLink" target="_blank"><span>Itch.io</span></a>).
+                        I made this project by myself in 4 weeks. During this time I mainly focused on implementing 
+                        the SOLID principles, I had a lot of fun in better understanding how to make my game more flexible!
+                    </p>
+                </div>
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">My efforts</span></h2>
+                    <p>I worked on:
+                        <li>The player</li>
+                        <li>GameManager</li>
+                        <li>Enemy AI</li>
+                        <li>Pickups</li>
+                        <li>Animations - I made all animations for the player</li>
+                        <li>UI</li>
+                        <li>VFX</li>
+                        <li>SFX</li>
+                        <li>Menus</li>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Code content -->
+        <section class="code hidden" id="code">
+            <h2 class="heading">Code</h2>
+
+            <div class="code-box">
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Platformer/PlatformerCode1.webp" alt="New Input System: Jump" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>New Input System: Jump</span></h2>
+                    <p>First time using Unity's new input system. Here is a snippet of the jump logic 
+                        In the OnEnable I subscribe this action to the input. I wanted the player to be able 
+                        to double jump, so I have an int that keeps track of the amount of jumps. OnJump I 
+                        add force to the player in the upwards direction. Then I let my own gravity weigh the 
+                        player down. Once it reaches the ground, the jumps are reset.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Inventory</span></h2>
+                    <p>Here is a simple inventory system, it has only one slot, because I wanted the player 
+                        to only hold one item at a time (it's just a small cat). So there is an Add and Remove 
+                        function, which adds only an Scriptable Object 'item'. Upon adding or removing an item 
+                        I update the inventory slot's icon.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Platformer/PlatformerCode2.webp" alt="Inventory" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Platformer/PlatformerCode3.webp" alt="Interface" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Interface</span></h2>
+                    <p>I used an Interface for the interactables. The dynamite is one of the interactables 
+                        In this part I add the Dynamite to the inventory. This is an object that gets instantiated 
+                        after the chest has been opened; it will float above the chest.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>OnInteract</span></h2>
+                    <p>Using the new input system I check for objects that have an interactable Interface 
+                        when the right key is pressed.
+                        <br>
+                        However, I also constantly check for interactables to give the player feedforward to indicate 
+                        an object can be interacted with. I do this by enabling a canvas and an outline shader.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Platformer/PlatformerCode4.webp" alt="OnInteract" onclick="ExpandImage(this)">
+                </div>
+
+            </div>
+
+            <h2 class="steps"> Check out my Git 
+                <a href="https://github.com/Inola8/Platformer/tree/main/PlatformerProject/Assets/_Project/Scripts" target="_blank">
+                    <span>here</span></i>
+                </a>
+                 for more
+            </h2>
+
+        </section>
+
+<!-- Expanded image -->
+        <div class="background-overlay" id="my-background-overlay">
+            <div class="close-overlay" onclick="CloseImage()">x</div>
+            <img class="bigger-img-content" id="img-ref">
+            <div id="bigger-img-text"></div>
+        </div>
+
+<!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>

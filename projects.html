@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="style.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+        <script defer src="javascript/FilterProjectPage.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#about">About</a>
+            </nav>
+        </header>
+
+<!-- Projects content -->
+        <section class="projects" id="projects">
+            <h2 class="heading">Projects</h2>
+
+<!-- Project & art divider -->
+            <!-- <div id="projectButtonContainer">
+                <button class="project-btn active" onclick="filterSelection('filter-project')">Projects</button>
+                <button class="project-btn" onclick="filterSelection('filter-art')">Art</button>
+            </div> -->
+
+            <div class="projects-box">
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject11()">
+                    <img src="images/Banner/AstraGunBanner.webp" alt="">
+                    <div class="projectName">AstraGun</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject10()">
+                    <img src="images/Banner/ResearchBanner.webp" alt="">
+                    <div class="projectName">Blueprint Class</div>
+                    <div class="textCenter">
+                        <div class="label">Unreal</div>
+                        <div class="label language">C++</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject9()">
+                    <img src="images/Banner/OTSBanner.webp" alt="">
+                    <div class="projectName">Overthinking to Socialize</div>
+                    <div class="textCenter">
+                        <div class="label">Unreal</div>
+                        <div class="label language">BP</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject8()">
+                    <img src="images/Banner/HospitalBanner.webp" alt="">
+                    <div class="projectName">Hospital Madness</div>
+                    <div class="textCenter">
+                        <div class="label">Unreal</div>
+                        <div class="label language">BP</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject7()">
+                    <img src="images/Banner/ARTDBanner.webp" alt="">
+                    <div class="projectName">Augmented Defender</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject6()">
+                    <img src="images/Banner/CatCarBanner.webp" alt="">
+                    <div class="projectName">CatCar</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject5()">
+                    <img src="images/Banner/TwinstickBanner.webp" alt="">
+                    <div class="projectName">Time's Journey</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject4()">
+                    <img src="images/Banner/ShyBanner.webp" alt="">
+                    <div class="projectName">SHY</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject3()">
+                    <img src="images/Banner/EldritchMadnessBanner.webp" alt="">
+                    <div class="projectName">Eldritch Madness</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject2()">
+                    <img src="images/Banner/AsteroidsBanner.webp" alt="">
+                    <div class="projectName">Dragonoids</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project filterDiv filter-project" id="projectBtn" onclick="GoToProject1()">
+                    <img src="images/Banner/KuruBanner.webp" alt="">
+                    <div class="projectName">Twirling Herta</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+<!-------------------------------------------------------------- Art -------------------------------------------------------------->
+                
+                <div class="project filterDiv filter-art" id="projectBtn" onclick="GoToArt1()">
+                    <img src="images/image.png" alt="">
+                    <div class="projectName">Art</div>
+                    <div class="textCenter"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>

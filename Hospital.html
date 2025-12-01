@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="projects.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/SlideShow.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/BiggerImgOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Game</a>
+                <a href="#images">Images</a>
+                <a href="#info">About</a>
+                <a href="#code"><span>Code</span></a>
+            </nav>
+        </header>
+
+<!-- Projects Button -->
+        <button onclick="GoToProjectPage()" class="projects-button">Back to all projects</button>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1><span>Hospital Madness</span></h1>
+                <h3>Game | Unreal | VR</h3>
+            </div>
+<!-- Trailer -->
+            <div class="home-img">
+                <iframe class="home-img" width="520" height="415" src="https://www.youtube.com/embed/2LQ6N9bZzbY?autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+<!-- Images -->
+         <section class="images" id="images">
+            <h2 class="heading">Images</h2>
+
+            <div class="images-box">
+
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital1.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital2.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital3.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital4.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital5.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital6.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Hospital/Hospital7.webp">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital1.webp" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital2.webp" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital3.webp" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital4.webp" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital5.webp" style="width:100%" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital6.webp" style="width:100%" onclick="currentSlide(6)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Hospital/Hospital7.webp" style="width:100%" onclick="currentSlide(7)">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Info content -->
+        <section class="info hidden" id="info">
+            <h2 class="heading">About the game</h2>
+
+            <div class="info-box">
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">Game</span></h2>
+                    <p class="info-moreText" id="typingEffect">This was a group project with 3 devs and one client/ artist from the film academy in Amsterdam.
+                        The request of this artist was to make an experience about worrying too much. So this takes place in a hospital with many doors 
+                        that lead you to patients in need. The doors have timers, which get more and more to a point you cannot help them in time. 
+                        The patients will die if not taken care of before the timer reaches it's end.
+                        <br>
+                        At the end of the day the player will have to realize it was all in their head, and it was just a regular day at work.
+                        <br>
+                        We had 8 weeks for this project, again this project must include a meta human, I worked on this project while also working on 
+                        <a href="OTS.html"><span>Overthinking To Socialize</span></a>.
+                    </p>
+                </div>
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">My efforts</span></h2>
+                    <p>I worked on:
+                        <li>New main level</li>
+                        <li>Visual feedback from doors</li>
+                        <li>Lights in the main room (getting darker)</li>
+                        <li>Blood on hands</li>
+                        <li>Game timer</li>
+                        <li>Exit doors</li>
+                        <li>VFX</li>
+                        <li>SFX</li>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Code content -->
+        <section class="code hidden" id="code">
+            <h2 class="heading">Code</h2>
+
+            <div class="code-box">
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Hospital/HospitalCode1.webp" alt="Game timer" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Game timer</span></h2>
+                    <p>I made a timer that determines the duration of the game, so this is just a timer 
+                        that counts up until it reaches the max time, then it will spawn the exit door, 
+                        where the player may end their shift. I do this by removing one of the doors, and 
+                        place the exit door on the same position.
+                        <br>
+                        At some point in the game I wanted to change the dust particle to a blood dust, for 
+                        a small but dramatic effect.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Lights</span></h2>
+                    <p>Everytime a patient dies the lights in the main room will get darker to raise the player's
+                        anxiety. I get all the lights and put them in an array, then grab their light component and 
+                        change the intensity.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Hospital/HospitalCode2.webp" alt="Lights" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Hospital/HospitalCode3.webp" alt="Blood on hands" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Blood on hands</span></h2>
+                    <p>I added all the materials to the hands and change the index of the material every time a 
+                        patient dies.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Door pt. 1</span></h2>
+                    <p>I based a lot of the logic for the doors on whether a patient needs help or not. 
+                        Basically a lot of visual feedforward and feedback.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Hospital/HospitalCode4.1.webp" alt="" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/Hospital/HospitalCode4.2.webp" alt="" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Door pt. 2</span></h2>
+                    <p>Here I call the Dim Lights function and Blood On Hands function I showed earlier.
+                        <br>
+                        Since the player uses an interface to check the door, I cannot simply use a bool check. 
+                        So I figured I just put an invisible wall infront of the doors when the patient dies, which 
+                        will block the ray to the door.
+                    </p>
+                </div>
+
+            </div>
+
+            <h2 class="steps"> Check out my Git 
+                <a href="https://github.com/Inola8/HospitalMadness/tree/main/Ziekenhuis/Content/Inola" target="_blank">
+                    <span>here</span></i>
+                </a>
+                 for more
+            </h2>
+
+        </section>
+
+<!-- Expanded image -->
+        <div class="background-overlay" id="my-background-overlay">
+            <div class="close-overlay" onclick="CloseImage()">x</div>
+            <img class="bigger-img-content" id="img-ref">
+            <div id="bigger-img-text"></div>
+        </div>
+
+<!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>

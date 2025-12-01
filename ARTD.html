@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="projects.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/SlideShow.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/BiggerImgOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Game</a>
+                <a href="#images">Images</a>
+                <a href="#info">About</a>
+                <a href="#code"><span>Code</span></a>
+            </nav>
+        </header>
+
+<!-- Projects Button -->
+        <button onclick="GoToProjectPage()" class="projects-button">Back to all projects</button>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1><span>Augmented Defender</span></h1>
+                <h3>Game | Unity | VR</h3>
+            </div>
+<!-- Trailer -->
+            <div class="home-img">
+                <iframe class="home-img" width="520" height="415" src="https://www.youtube.com/embed/dBAJuZiYbg4?autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+<!-- Images -->
+         <section class="images" id="images">
+            <h2 class="heading">Images</h2>
+
+            <div class="images-box">
+
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD1.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD2.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD3.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD4.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD5.webp">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ARTD/ARTD6.webp">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD1.webp" style="width:100%" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD2.webp" style="width:100%" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD3.webp" style="width:100%" onclick="currentSlide(3)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD4.webp" style="width:100%" onclick="currentSlide(4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD5.webp" style="width:100%" onclick="currentSlide(5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/ARTD/ARTD6.webp" style="width:100%" onclick="currentSlide(6)">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Info content -->
+        <section class="info hidden" id="info">
+            <h2 class="heading">About the game</h2>
+
+            <div class="info-box">
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">Game</span></h2>
+                    <p id="typingEffect">This is a rather classic tower defense game, however it is entirely in VR.
+                        No controllers needed, you can touch and grab everything!
+                        We worked on this for 4 weeks with a total of 3 devs, later we got a couple of artists for a very
+                        short time to provide us with some assets. My focus was on making the game and gameloop, the others worked on the AR part.
+                    </p>
+                </div>
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">My efforts</span></h2>
+                    <p>I worked on:
+                        <li>Gameloop</li>
+                        <li>GameManager</li>
+                        <li>WaveManager</li>
+                        <li>Shop</li>
+                        <li>Turrets</li>
+                        <li>Base tower</li>
+                        <li>Enemies</li>
+                        <li>Pickups/ Drops</li>
+                        <li>UI</li>
+                        <li>SFX</li>
+                        <li>VFX</li>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Code content -->
+        <section class="code hidden" id="code">
+            <h2 class="heading">Code</h2>
+
+            <div class="code-box">
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/ARTD/ARTDCode1.webp" alt="" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>GameManager</span></h2>
+                    <p>In the GameManager I took care of the start and end of the game, and the start of each round.
+                        For the start of the game, I simply enable the game itself after the start button has been pressed.
+                        As for the end, you can win or lose. When you win, firework will play, but when you lose an explosion 
+                        will blow up the whole game board.
+                        <br>
+                        In StartNewRound I keep the WaveManager up to date.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>WaveManager</span></h2>
+                    <p>Everytime a new wave is activated the amount will increase and the enemies will be 
+                        able to spawn. The enemies spawn at an interval, and I randomly pick an enemy that I 
+                        split in two groups (so group one is easier, group two is harder).
+                        <br>
+                        I keep track of the enemies in a List, when they are spawned they are added, when they die 
+                        they will be removed. When an enemy is removed I will check if the List is empty, so I can 
+                        activate the next wave.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/ARTD/ARTDCode2.webp" alt="" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/ARTD/ARTDCode3.webp" alt="" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Shop</span></h2>
+                    <p>The player can buy powerups in this shop, upon pressing a button 
+                        I check if the player has enough coins to get the powerup. If this 
+                        is true, then i retract the cost and activate the powerup.
+                        <br>
+                        I connect the powerup though an int which is the parameter, so all the powerups 
+                        have their own int, which is compared when this function is called.
+                    </p>
+                </div>
+
+            </div>
+
+            <h2 class="steps"> Check out my Git 
+                <a href="https://github.com/Inola8/AR-Tower-Defense/tree/main/Assets/_Project/Scripts" target="_blank">
+                    <span>here</span></i>
+                </a>
+                 for more
+            </h2>
+
+        </section>
+        
+<!-- Expanded image -->
+        <div class="background-overlay" id="my-background-overlay">
+            <div class="close-overlay" onclick="CloseImage()">x</div>
+            <img class="bigger-img-content" id="img-ref">
+            <div id="bigger-img-text"></div>
+        </div>
+
+<!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>

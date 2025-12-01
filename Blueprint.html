@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="projects.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/SlideShow.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/BiggerImgOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="index.html" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Game</a>
+                <a href="#info">About</a>
+                <a href="#progress">Progress</a>
+            </nav>
+        </header>
+
+<!-- Projects Button -->
+        <button onclick="GoToProjectPage()" class="projects-button">Back to all projects</button>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1><span>Blueprint Class</span></h1>
+                <h3>Research | Unreal | C++</h3>
+            </div>
+<!-- Trailer -->
+            <div class="home-img">
+                <iframe class="home-img" width="520" height="415" src="https://www.youtube.com/embed/bSIRKC4V9go?autoplay=1&mute=1"></iframe>
+            </div>
+        </section>
+
+<!-- Info content -->
+        <section class="info hidden" id="info">
+            <h2 class="heading">About this project</h2>
+
+            <div class="info-box">
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">Research</span></h2>
+                    <p id="typingEffect">For this project I did research on how to make my own Blueprint Class using C++.
+                        <br>
+                        So this is a step by step project, I wrote a page about the process more thoroughly <a href="https://www.notion.so/Keuzedeel-C-1a63c0f86f7480aea860ce3115539d80?source=copy_link" target="_blank"><span>here</span></a>.
+                        (However, it is in Dutch).
+                        <br>
+                        Step 1 was doing research, so let's jump straight into step 2 below.
+                    </p>
+                </div>
+
+                <div class="info-content info-text">
+                    <h2><span id="info-heading">My steps</span></h2>
+                    <ol>
+                        <li> Research C++</li>
+                        <li> Make a Class that returns something</li>
+                        <li> Make a Class with a timer</li>
+                        <li> Make a Class that spawns an object after a certain time</li>
+                        <li> Make a Class that starts a level sequence after a certain time</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Code content -->
+        <section class="code hidden" id="progress">
+            <h2 class="heading">Progress</h2>
+
+            <h2 class="steps">Step 2</h2>
+
+            <div class="code-box">        
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS1.1.webp" alt="Returning a value" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Returning a value</span></h2>
+                    <p>This is my cpp file, I give two parameters to the this function, so the user can 
+                        fill them in themselves, then it will add these two values.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>The class in Blueprints</span></h2>
+                    <p>So I search the Class I made, and make two integers with different values. On BeginPlay it will 
+                        show a print string with the combined value.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS1.2.webp" alt="The class in Blueprints" onclick="ExpandImage(this)">
+                </div>
+            </div>
+
+            <h2 class="steps">Step 3</h2>
+
+            <div class="code-box">   
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS2.1.webp" alt="Adding a timer" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Adding a timer</span></h2>
+                    <p>To make use of the OnTimer event from Unreal Engine, I had to include TimerManager. 
+                        Which will make it possible to call and cancel a timer.
+                        <br>
+                        Here I did add a parameter and set it equal to the timer I will actually call in the 
+                        TimerManager
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>The class in Blueprints</span></h2>
+                    <p>In Blueprints the user can add a float and give it a value to determine how long the 
+                        delay take.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS2.2.webp" alt="The class in Blueprints" onclick="ExpandImage(this)">
+                </div>
+            </div>
+
+            <h2 class="steps">Step 4</h2>
+
+            <div class="code-box">   
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS3.1.webp" alt="Spawn an object pt.1" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Spawn an object pt.1</span></h2>
+                    <p>For the first part the logic is all the same, give input before the timer, which are all 
+                        parameters, and will be passed on to the variables used in this function.
+                        <br>
+                        I split the function in two, because only the first function is called, and it will not 
+                        get to the logic after the timer.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Spawn an object pt.2</span></h2>
+                    <p>To actually spawn an Actor I needed some parameters. So the values I wanted to change 
+                        and for anything I do not want to change I used FActorSpawnParameters, so all the needed 
+                        parameters are present.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS3.2.webp" alt="Spawn an object pt.2" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS3.3.webp" alt="The class in Blueprints" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>The class in Blueprints</span></h2>
+                    <p>A whole lot of parameters for the user to have control over!
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="steps">Step 5</h2>
+
+            <div class="code-box">   
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Play level sequence pt.1</span></h2>
+                    <p>The first part is the same as the previous step.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS4.1.webp" alt="Play level sequence pt.1" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS4.2.webp" alt="Play level sequence pt.2" onclick="ExpandImage(this)">
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>Play level sequence pt.2</span></h2>
+                    <p>So to get a LevelSequence I had to include the LevelSequence and MovieScene in the build. 
+                        (which is why I had to switch to Rider, because Visual Studio did not allow me to include those).
+                        But then I just create a LevelSequencePlayer, and play it.
+                    </p>
+                </div>
+
+                <div class="code-content code-text">
+                    <h2 id="code-name"><span>The class in Blueprints</span></h2>
+                    <p>It looks so simple now.
+                    </p>
+                </div>
+
+                <div class="code-content code-snippet">
+                    <img id="to-bigger-img" src="images/BlueprintClass/BCCodeS4.3.webp" alt="The class in Blueprints" onclick="ExpandImage(this)">
+                </div>
+
+            </div>
+
+            <h2 class="steps"> Check out my Git 
+                <a href="https://github.com/Inola8/BlueprintClass/blob/main/Content/Blueprints/MyMyActorTest.uasset" target="_blank">
+                    <span>here</span></i>
+                </a>
+                 for more
+            </h2>
+        </section>
+
+<!-- Expanded image -->
+        <div class="background-overlay" id="my-background-overlay">
+            <div class="close-overlay" onclick="CloseImage()">x</div>
+            <img class="bigger-img-content" id="img-ref">
+            <div id="bigger-img-text"></div>
+        </div>
+
+<!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>
