@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Inola Stoffer</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <link rel="stylesheet" href="style.css">
+<!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<!-- Pixel Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Tiny5&display=swap" rel="stylesheet">
+<!-- JavaScript -->
+        <script defer src="javascript/ShowMenu.js"></script>
+        <script defer src="javascript/OnClickToProject.js"></script>
+        <script defer src="javascript/ShowOnScroll.js"></script>
+        <script defer src="javascript/ShowSkillOnClick.js"></script>
+        <script defer src="javascript/PopUpEmail.js"></script>
+    </head>
+    <body>
+<!-- Navbar -->
+        <header class="header">
+            <a href="#home" class="logo">Inola <span>Stoffer</span></a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+            </nav>
+        </header>
+
+<!-- Main content -->
+        <section class="home hidden" id="home">
+            <div class="home-content">
+                <h1>Hi, <span>Inola</span> here </h1>
+                <h3>I am a <span>creative software developer</span></h3>
+            </div>
+<!-- Image -->
+            <div class="home-img">
+                <img src="images/MainImg.png" alt="">
+            </div>
+        </section>
+
+<!-- Projects content -->
+        <section class="projects hidden" id="projects">
+            <h2 class="heading">Projects</h2>
+
+            <div class="projects-box">
+
+                <div class="project" id="projectBtn" onclick="GoToProject9()">
+                    <img src="images/Banner/OTSBanner.webp" alt="">
+                    <div class="projectName">Overthinking to Socialize</div>
+                    <div class="textCenter">
+                        <div class="label">Unreal</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+
+                <div class="project" id="projectBtn" onclick="GoToProject5()">
+                    <img src="images/Banner/TwinstickBanner.webp" alt="">
+                    <div class="projectName">Time's Journey</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                    </div>
+                </div>
+
+                <div class="project" id="projectBtn" onclick="GoToProject7()">
+                    <img src="images/Banner/ARTDBanner.webp" alt="">
+                    <div class="projectName">Augmented Defender</div>
+                    <div class="textCenter">
+                        <div class="label">Unity</div>
+                        <div class="label language">C#</div>
+                        <div class="label hardware">VR</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="projects.html" onclick="ClickOnSkill(9)" class="btn">See more projects</a>
+        </section>
+
+<!-- About me image -->
+        <section class="about hidden" id="about">
+            <div class="about-img">
+                <img src="images/self.jpg" alt="">
+            </div>
+
+<!-- About me content -->
+            <div class="about-content">
+                <h2>About <span>Me</span></h2>
+                <p>I have discovered a passion for creating games. 
+                    Clearly games have always been an interest of mine, but now 
+                    that I am actually building my own I can only strive for more.
+                    I would love to share my own creativity with the game industry.
+                    Games have always been a great outlet for me, whether it was my 
+                    brief escape from reality, or my social time with friends. I want 
+                    to help create more games like the ones I enjoy, to entertain people, 
+                    or give them that little distraction from reality everybody deserves.</p>
+                    <br>
+                <p>You can see my work on my <a href="projects.html"><span>projects</span></a> tab or give them a go on my 
+                    <a href="https://joy888.itch.io/" target="_blank"><span>Itch.io</span></a>.</p>
+                <p>Want to know about my work experience? Click the button down below to check out my resume.</p>
+                    <a href="Downloadables/Curriculum Vitae.pdf" download="Curriculum" class="btn">Resume</a>
+            </div>
+        </section>
+
+<!-- Skills content -->
+        <section class="skills hidden" id="skills">
+            <h2 class="heading">Skills</h2>
+
+            <div class="skills-box">
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.2.webp" class="skillImage" alt="">
+                    <div class="skillName">Engine</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.7.webp" class="skillImage" alt="">
+                    <div class="skillName">Engine</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.1.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.6.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.3.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.4.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.5.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div>
+
+                <!-- <div class="skill hidden"> Python
+                    <img src="images/Skills/Skill2.8.webp" class="skillImage" alt="">
+                    <div class="skillName">Language</div>
+                </div> -->
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.9.webp" class="skillImage" alt="">
+                    <div class="skillName">Tool</div>
+                </div>
+
+                <div class="skill hidden">
+                    <img src="images/Skills/Skill2.10.webp" class="skillImage" alt="">
+                    <div class="skillName">Hardware</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Email address -->
+        <div class="email-popup" id="myForm">
+            <div class="form-container">
+
+                <h1>Email</h1>
+                <input type="text" value="inolastoffer3@gmail.com" id="myInput">
+
+                <div class="tooltip">
+                    <button class="btn" onclick="copyEmail()" onmouseout="outFunc()">Copy email
+                        <div class="tooltiptext" id="myTooltip">Copy to clipboard</div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Footer -->
+        <footer class="footer">
+            <div class=" social-icons">
+                <a href="https://github.com/Inola8" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/inola-stoffer-77b4a6373/" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <button class="open-button" value="OFF" onclick="toggle(this)">
+                    <i class="bx bx-envelope-open"></i>
+                </button>
+            </div>
+
+            <p class="copyright">
+                © Inola Stoffer | All rights reserved
+            </p>
+        </footer>
+    </body>
+</html>
